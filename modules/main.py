@@ -29,21 +29,21 @@ bot = Client(
     bot_token=bot_token)
 
 
-@bot.on_message(filters.command(["baby"]))
+@bot.on_message(filters.command(["bhuriya"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**ℍɪɪ ɧąƈƙɛཞ.😎 \n\n  𝔾ɪᴠᴇ /bhuriya ℂᴏᴍᴍᴀɴᴅ ᴛᴏ 𝔻ᴏᴡɴʟᴀᴏᴅ 𝔽ʀᴏᴍ ᴀ 𝕋ᴇ𝕩ᴛ ғɪʟᴇ.⚡️\n**")
+    editable = await m.reply_text("**ℍɪɪ ɧąƈƙɛཞ.😎 \n\n  𝔾ɪᴠᴇ /bhuriya वीडियो डाउनलोड करना चाहते हो तो पापा का नाम लिखो 🤓.⚡️\n**")
 
 
 @bot.on_message(filters.command("rukja"))
 async def restart_handler(_, m):
-    await m.reply_text("**ℝᴜᴋ 𝔾ʏᴀ😁😎**", True)
+    await m.reply_text("**रुक गया भोसडी के 😡**", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["hacker"]))
+@bot.on_message(filters.command(["bhuriya"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('**ℍɪɪ ɧąƈƙɛཞ.😎 \n\n 𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️**')
+    editable = await m.reply_text('**ℍɪɪ ɧąƈƙɛཞ.😎 \n\n वीडियो डाउनलोड करना चाहते हो तो पापा का नाम लिखो bhuriya ⚡️**')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -65,18 +65,18 @@ async def account_login(bot: Client, m: Message):
            return
     
    
-    await editable.edit(f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗** **{len(links)}**\n\n**𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤** **1**")
+    await editable.edit(f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗** **{len(links)}**\n\n**जहा से शुरू करना चाहता है वहा का नंबर डाल गांङू 😂** **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**𝔼ɴᴛᴇʀ 𝔹ᴀᴛᴄʜ ℕᴀᴍᴇ🤔**")
+    await editable.edit("**तेरे बैच का नाम लिख बेटा 😝**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
     
 
-    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸\n\nℚᴜᴀʟɪᴛʏ तो बताओ 𝕃ɪᴋᴇ 𝟷𝟺𝟺ᴘ, 𝟸𝟺𝟶ᴘ, 𝟹𝟼𝟶ᴘ, 𝟺𝟾𝟶ᴘ, 𝟽𝟸𝟶ᴘ, 𝟷𝟶𝟾𝟶ᴘ**")
+    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸\n\nतेरी क्वालिटी की औकात डाल दे 😋 𝕃ɪᴋᴇ 𝟷𝟺𝟺ᴘ, 𝟸𝟺𝟶ᴘ, 𝟹𝟼𝟶ᴘ, 𝟺𝟾𝟶ᴘ, 𝟽𝟸𝟶ᴘ, 𝟷𝟶𝟾𝟶ᴘ**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -100,7 +100,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Captio to add Otherwise send**   **`bhuriya`**")
+    await editable.edit("**तू डाउनलोडिंग में तेरा नाम चाहता है तो तेरा नेम लिख वरना गान्ड मारा ओर छोटा no लिख दे🤪😅😅**   **`no`**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -189,7 +189,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**Name »** `{name}\nQuality » {raw_text2}`\n\n**Url »** `{url}`\n\n🤖𝔹ᴏᴛ 𝕄ᴀᴅᴇ 𝔹ʏ bhuriya\n"
+                    Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**Name »** `{name}\nQuality » {raw_text2}`\n\n**Url »** `{url}`\n\nबोट तेरे पापा bhuriya ने बनाया है 😝\n"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -206,7 +206,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**ℂᴏᴍᴘʟᴇᴛᴇ ℍᴏ 𝔾ʏᴀ 𝔹ᴏ𝕤𝕤😎**")
+    await m.reply_text("**पूरा हो गया तेरा बैच, भाग भोसडी के😂😂😂😎**")
 
 
 bot.run()
