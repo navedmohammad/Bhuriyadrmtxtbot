@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**और चूतियो कैसे हो😁😎 \n\n  𝔾ɪᴠᴇ /bhuriya वीडियो डाउनलोड करना चाहते हो तो पापा का नाम लो  🤓.⚡️\n**")
+    editable = await m.reply_text("** कैसे हो😁😎 \n\n  𝔾ɪᴠᴇ /bhuriya वीडियो डाउनलोड करना चाहते हो तो पापा का नाम लो  🤓.⚡️\n**")
 
 
 @bot.on_message(filters.command("rukja"))
@@ -200,7 +200,7 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading Interupted **\n{str(e)}\n**Name** » {name}\n**Link** » `{url}`"
+                    f"**फाइल डाउनलोडिंग में कुछ प्रॉब्लम आ गई है, वापस try करता हूं 🥺 **\n{str(e)}\n**Name** » {name}\n**Link** » `{url}`"
                 )
                 continue
 
