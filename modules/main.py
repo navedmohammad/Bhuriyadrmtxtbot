@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**और चूतियो कैसे हो😁😎 \n\n  𝔾ɪᴠᴇ /bhuriya वीडियो डाउनलोड करना चाहते हो तो पापा का नाम लो ओर TXT भेज दो 🤓.⚡️\n**")
+    editable = await m.reply_text("**और चूतियो कैसे हो😁😎 \n\n  𝔾ɪᴠᴇ /bhuriya वीडियो डाउनलोड करना चाहते हो तो पापा का नाम लो  🤓.⚡️\n**")
 
 
 @bot.on_message(filters.command("rukja"))
@@ -43,7 +43,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["bhuriya"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('**और चूतियो कैसे हो😁.😎 \n\n वीडियो डाउनलोड करना चाहते हो तो पापा का नाम लिखो bhuriya ⚡️**')
+    editable = await m.reply_text('**और चूतियो कैसे हो😁.😎 \n\n अब तेरी TXT भेज दे ओर इंतजार कर ⌚️ ⚡️**')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -189,7 +189,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**Name »** `{name}\nQuality » {raw_text2}`\n\n**Url »** `{url}`\n\nबोट तेरे पापा bhuriya ने बनाया है 😝\n"
+                    Show = f"**डाउनलोड करके दे रहा हु थोड़ा टाइम लगेगा❗️❗️»**\n\n**Name »** `{name}\nQuality » {raw_text2}`\n\n**Url »** `{url}`\n\nबोट तेरे पापा bhuriya ने बनाया है 😝\n"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
