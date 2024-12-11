@@ -15,7 +15,7 @@ WORKDIR /app/
 
 # Install Python dependencies from requirements.txt
 # Ensure requirements.txt exists in the copied files
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+RUN pip3 install --no-cache-dir --upgrade --requirement installer
 
 # Specify the command to run the application
 CMD ["gunicorn", "app:modules"] & ["python3", "main.py"]
